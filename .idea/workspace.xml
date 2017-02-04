@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="673bae43-d374-4e1d-bb88-cb0fe847f8a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Regression/WebTraffic/Solution.py" afterPath="$PROJECT_DIR$/Regression/WebTraffic/Solution.py" />
-    </list>
+    <list default="true" id="673bae43-d374-4e1d-bb88-cb0fe847f8a8" name="Default" comment="" />
     <ignored path="Machine-Learning-With-Python.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
