@@ -8,7 +8,7 @@ import pandas as pd
 class Solution:
 
     def __init__(self):
-        self.data = sp.genfromtxt("Dataset.txt", delimiter=",")
+        self.data = sp.genfromtxt("DataSets/Dataset.txt", delimiter=",")
 
     def error(f, x, y):
         return sp.sum((f(x) - y) ** 2)

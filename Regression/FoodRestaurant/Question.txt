@@ -3,3 +3,11 @@ variable to predict profits for a food truck.  Suppose you are the CEO of a
 restaurant  franchise  and  are  considering  different  cities  for  opening  a  new
 outlet.  The chain already has trucks in various cities and you have data for
 profits and populations from the cities.
+
+
+Compilation Process on cmd
+1) python
+2) import Solution
+3) sol = Solution.Solution()
+4) sol.Computaion()
+5) sol.predict(values) //values is input to predict profit in city. input is Population
