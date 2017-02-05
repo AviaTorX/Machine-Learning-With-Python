@@ -46,7 +46,9 @@ class Solution:
 
     def Predict(self, test):
         [p, q] = test.shape
-        test = np.c_(np.ones(p), test)
+        #print(p)
+        test = np.c_[np.ones(p), test]
+        #print(test.shape)
         w = np.transpose(self.theta)
         r = np.dot(test, w)
         return self.Hypothesis(r)
