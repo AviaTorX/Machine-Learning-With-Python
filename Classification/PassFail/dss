@@ -1,0 +1,25 @@
+class Solution:
+
+    def __init__(self):
+        self.data = pd.read_csv("DataSets/ex2data1.txt")
+        self.data = np.asmatrix(self.data)
+        self.VariableCreation()
+
+    def VariableCreation(self):
+        [self.m, self.n] = self.data.shape
+        self.x = self.data[:, :-1]
+        #self.x = np.c_[np.ones(self.m), self.x]
+        self.y = self.data[:, self.n - 1]
+        #print(self.data[:2])
+        #print(self.x[:2])
+        #print(self.y[:2])
+        self.Calculation()
+
+    def Calculation(self):
+        self.regr = linear_model.LogisticRegression()
+        self.regr.fit(self.x, self.y)
+
+    def Predictions(self):
+        test = pd.read_csv("DataSets/Test.txt")
+        print(self.regr.predict(test))
+
